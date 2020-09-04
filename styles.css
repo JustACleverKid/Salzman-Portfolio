@@ -20,9 +20,9 @@ main > h1 {
   font-size: 3.5em;
 }
 
-nav > ul {
+nav > ul > li {
   font-size: 2em;
 }
-nav > ul > ul {
+nav > ul > ul > li {
   font-size: 1.5em;
 }
