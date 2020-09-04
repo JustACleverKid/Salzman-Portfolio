@@ -21,13 +21,13 @@ main > h1 {
 }
 
 nav > ul > li {
-  font-size: 2em;
+  font-size: 1em;
 }
 nav > ul > ul > li {
   font-size: 1.5em;
   display: none;
 }
-nav > ul:hover, nav > ul > li:hover {
+nav > ul > li:hover {
   font-size: 1.5em;
   display: block;
 }
