@@ -29,6 +29,16 @@ body {
    flex-wrap: wrap;
 }
 
+#left {
+   flex-grow: 1;
+   flex-shrink: 8;
+   flex-basis: 130px;
+}
+
+#right {
+   
+}
+
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
