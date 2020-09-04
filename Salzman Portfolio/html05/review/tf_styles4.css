@@ -23,7 +23,11 @@
 
 /* General Flex Styles */
 
-
+body {
+   display: flexbox;
+   orientation: row;
+   flex-wrap: wrap;
+}
 
 /* ===============================
 	Mobile Devices: 0 to 480px 
