@@ -54,7 +54,10 @@ article {
    flex-basis: 351px;
 }
 aside.tips {
-   
+   display: flex;
+   flex-grow: 1;
+   flex-shrink: 2;
+   flex-basis: 250px;
 }
 
 /* ===============================
