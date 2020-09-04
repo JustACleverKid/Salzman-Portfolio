@@ -11,7 +11,7 @@ html, body {
 
 main {
   margin: auto;
-  width: 30%;
+  width: 100%;
   padding: 20px;
 }
 
@@ -27,7 +27,7 @@ nav > ul > ul > li {
   font-size: 1.5em;
   display: none;
 }
-nav > ul:hover+li:hover {
+nav > ul:hover, nav > ul > li:hover {
   font-size: 1.5em;
   display: block;
 }
