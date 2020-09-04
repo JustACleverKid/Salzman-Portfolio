@@ -41,8 +41,10 @@ body {
    flex-basis: 351px;
 }
 
-.tips {
-   
+section.tips {
+   display: flexbox;
+   flex-direction: row;
+   flex-wrap: wrap;
 }
 
 /* ===============================
