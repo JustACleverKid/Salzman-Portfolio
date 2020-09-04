@@ -25,4 +25,9 @@ nav > ul > li {
 }
 nav > ul > ul > li {
   font-size: 1.5em;
+  display: none;
+}
+nav > ul:hover+li:hover {
+  font-size: 1.5em;
+  display: block;
 }
