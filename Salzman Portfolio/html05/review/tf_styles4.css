@@ -47,6 +47,13 @@ section.tips {
    flex-wrap: wrap;
 }
 
+article {
+   display: flex;
+   flex-grow: 2;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
+
 /* ===============================
 	Mobile Devices: 0 to 480px 
    ===============================
