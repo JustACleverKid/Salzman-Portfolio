@@ -20,7 +20,6 @@
 @import url("tf_designs.css");
 
 
-
 /* General Flex Styles */
 
 body {
@@ -58,6 +57,11 @@ aside.tips {
    flex-grow: 1;
    flex-shrink: 2;
    flex-basis: 250px;
+}
+
+nav > ul {
+   orientation: column;
+   
 }
 
 /* ===============================
