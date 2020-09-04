@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Jack Salzman
+   Date:   Sunday, August 30
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+
+html {
+   height: 100%;
+}
+body {
+   width: 95%;
+   min-width: 640px;
+   max-width: 960px;
+   min-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+header, ul, nav, li, a {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Row Styles */
+
+.row::after {
+   float: none;
+}
+
+/* Page Header Styles */
+
+body header image {
+   display: block;
+   width: 70%;
+   float: left;
+}
+
+body header nav {
+   float: left;
+   padding-left: 2%;
+   padding-right: 2%;
+   width: 30%;
+}
+header nav li {
+   display: block;
+}
+
+/* Horizontal Navigation List Styles */
+
+nav a {
+ display: block;
+ width: 12.5%;
+ float: left;
+}
+
+/* Topics Styles */
+
+ul#topics {
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 0%;
+   margin-right: 1.5%;
+}
+
+li > img {
+   display: block;
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* HR Styles */
+
+hr {
+   width: 50%;
+}
+
+/* Customer Comment Styles */
+
+ul#comments {
+   width: 75%;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: auto;
+   margin-right: auto;
+}
+li#comments {
+   display: block;
+   width: 50%;
+   float: left;
+   margin-bottom: 30px;
+}
+li#comments > img {
+   display: block;
+   width: 20%;
+   float: left;
+   margin-left: 50%;
+   margin-right: 50%;
+}
+li > p {
+   float: left;
+   width: 70%;
+}
+
+/* Footer Styles */
+
+footer {
+   clear: both;
+}

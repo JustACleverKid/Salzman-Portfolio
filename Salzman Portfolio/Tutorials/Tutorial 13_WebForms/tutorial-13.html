@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<!--
+  This HTML file is intended for use with the Cengage Learning video tutorial
+  entitled "Web Forms". It provides students with a starting point for the
+  tutorial so that they may focus on the JavaScript event concepts that are
+  presented in the video. The video assumes that students are already familar
+  with the HTML constructs included in this file.
+-->
+<html lang="en-US">
+
+<head>
+<title>Tutorial 13</title>
+<link href="tutorial-13.css" rel="stylesheet"/>
+<script src="tutorial-13.js"></script>
+</head>
+
+<body>
+  <table class="main">
+    <tr>
+	  <td class="tutorial">Tutorial 13</td>
+	</tr>
+	<tr>
+	  <td class="body">
+		<table class="webform">
+		  <tr>
+	        <td class="title" colspan="4">Office Supplies Order Form</td>
+		  </tr>
+		  <tr>
+		    <th class="col1">Quantity</th>
+		    <th class="col2">Item Description</th>
+		    <th class="col3">Price</th>
+		    <th class="col4">Extension</th>
+		  </tr>
+		  <tr>
+		    <td colspan="4">
+			  <table id="lineItems">
+			  </table>
+			</td>
+		  </tr>
+		  <tr>
+		    <td class="summary" colspan="2">Subtotal:</td>
+		    <td class="summary" colspan="2" id="subtotal">$0.00</td>
+		  </tr>
+		  <tr>
+		    <td class="summary" colspan="2">Sales Tax:</td>
+		    <td class="summary" colspan="2" id="salesTax">$0.00</td>
+		  </tr>
+		  <tr>
+		    <td class="summary" colspan="2">Grand Total:</td>
+		    <td class="summary" colspan="2" id="grandTotal">$0.00</td>
+		  </tr>
+		</table>
+	  </td>
+	</tr>
+  </table>
+</body>
+
+</html>

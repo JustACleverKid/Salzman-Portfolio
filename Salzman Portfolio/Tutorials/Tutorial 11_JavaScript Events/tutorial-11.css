@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*
+  This CSS file is intended for use with the Cengage Learning video tutorial
+  entitled "JavaScript Events". It provides students with a starting point for
+  the tutorial so that they may focus on the JavaScript event concepts that are
+  presented in the video. The video assumes that students are already familar
+  with the CSS constructs included in this file.
+*/
+
+span.canvas
+{
+  font-family:Arial,sans-serif;
+  font-size:24px;
+  font-weight:bold;
+}
+
+span.header
+{
+  font-family:Arial,sans-serif;
+  font-size:32px;
+  font-weight:bold;
+}
+
+span.label
+{
+  font-family:Arial,sans-serif;
+  font-size:16px;
+  font-weight:bold;
+}
+
+table.canvas
+{
+  border-collapse:collapse;
+  border-spacing:0px;
+  margin:auto;
+}
+
+table.main
+{
+  background-color:#EFEFEF;
+  border-collapse:collapse;
+  margin:auto;
+}
+
+table.palette
+{
+  border-collapse:collapse;
+  border-spacing:0px;
+}
+
+td.active
+{
+  border-right:1px;
+  border-right-style:solid;
+  height:60px;
+  width:120px;
+}
+
+td.active-color
+{
+  border:1px;
+  border-style:solid;
+  height:20px;
+  width:20px;
+}
+td.canvas
+{
+  border:1px;
+  border-style:solid;
+  text-align:center;
+}
+
+td.canvas-color
+{
+  background-color:#FFFFFF;
+  border:1px;
+  border-style:solid;
+  cursor:pointer;
+  height:40px;
+  width:40px;
+}
+
+td.header
+{
+  border:1px;
+  border-style:solid;
+  height:50px;
+  text-align:center;
+}
+
+td.label1
+{
+  border-left:1px;
+  border-left-style:solid;
+  height:60px;
+  text-align:right;
+  width:120px;
+}
+
+td.label2
+{
+  height:60px;
+  text-align:right;
+  width:200px;
+}
+
+td.palette
+{
+  width:200;
+}
+
+td.palette-color
+{
+  border:1px;
+  border-style:solid;
+  cursor:pointer;
+  height:20px;
+  width:20px;
+}
