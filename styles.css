@@ -6,12 +6,12 @@ html, body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #99ffff;
 }
 
 main {
   margin: auto;
-  width: 50%;
+  width: 30%;
   padding: 20px;
 }
 
