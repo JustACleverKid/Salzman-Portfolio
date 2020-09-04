@@ -36,6 +36,12 @@ body {
 }
 
 #right {
+   flex-grow: 8;
+   flex-shrink: 1;
+   flex-basis: 351px;
+}
+
+.tips {
    
 }
 
