@@ -83,12 +83,19 @@ nav > ul {
    footer {
       order: 100;
    }
+   a#navicon {
+      display: block;
+   }
+   nav > ul {
+      display: none;
+   }
+   a#navicon:hover+ul, nav.horizontal ul:hover {
+      display: block;
+   }
 }
 
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
-
 
