@@ -71,7 +71,12 @@ nav > ul {
 */
 	
 @media only screen and (max-width: 480px) {
-   nav > ul display: ;
+   nav > ul {
+      display: flexbox;
+      orientation: column;
+      flex-wrap: wrap;
+      height: 240px;
+   }
 }
 
 /* ============================================
