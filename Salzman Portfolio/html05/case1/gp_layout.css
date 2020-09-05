@@ -25,19 +25,27 @@
 
 body {
    display: flexbox;
-   orientation: row;
+   flex-flow: row;
+   flex-wrap: wrap;
 }
 
 section#sheet {
+   display: flexbox;
    flex-grow: 3;
    flex-shrink: 1;
    flex-basis: 301px;
+   float: left;
 }
 
 article {
+   display: flexbox;
    flex-grow: 1;
    flex-shrink: 3;
    flex-basis: 180px;
+}
+footer {
+   clear: both;
+   display: flexbox;
 }
 
 /* ============================================
@@ -49,7 +57,7 @@ article {
    img.panel {
       width: 100%;
    }
-   nav {
+   nav.horizontal {
       order: 99;
    }
    body > footer {
@@ -65,8 +73,8 @@ article {
 
 @media screen and (min-width: 481px) {
    nav.horizontal ul {
-      display: flexbox;
-      orientation: row;
+      display: flex;
+      flex-flow: row;
       height: 40px;
       flex-wrap: nowrap;
    }
