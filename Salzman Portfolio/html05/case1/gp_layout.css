@@ -23,7 +23,10 @@
 
 /* Flex Layout Styles */
 
-
+body {
+   display: flexbox;
+   orientation: row;
+}
 
 
 
