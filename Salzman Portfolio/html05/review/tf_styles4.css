@@ -77,6 +77,12 @@ nav > ul {
       flex-wrap: wrap;
       height: 240px;
    }
+   section#left {
+      order: 99;
+   }
+   footer {
+      order: 100;
+   }
 }
 
 /* ============================================
