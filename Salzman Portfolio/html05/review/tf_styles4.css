@@ -19,7 +19,6 @@
 
 @import url("tf_designs.css");
 
-
 /* General Flex Styles */
 
 body {
@@ -29,12 +28,14 @@ body {
 }
 
 section#left {
+   width: 20%;
    flex-grow: 1;
    flex-shrink: 8;
    flex-basis: 130px;
 }
 
 section#right {
+   width: 70%;
    flex-grow: 8;
    flex-shrink: 1;
    flex-basis: 351px;
@@ -58,8 +59,13 @@ aside.tips {
    flex-shrink: 2;
    flex-basis: 250px;
 }
-
-nav.horizontal > ul {
+nav.horizontal {
+   display: flexbox;
+   width: 100%;
+   columns: 4;
+   overflow-wrap: wrap;
+}
+nav > ul {
    display: flexbox;
    orientation: column;
    flex-wrap: wrap;
@@ -86,7 +92,7 @@ nav.horizontal > ul {
    a#navicon {
       display: block;
    }
-   nav.horizontal > ul {
+   nav#horizontal > ul {
       display: none;
    }
    a#navicon:hover+ul, nav.horizontal ul:hover {
@@ -100,5 +106,7 @@ nav.horizontal > ul {
 */
 
 @media only screen and (min-width: 481px) {
-   
+   nav#horizontal > ul {
+      height: 160px;
+   }
 }
