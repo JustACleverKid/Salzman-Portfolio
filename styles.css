@@ -1,6 +1,13 @@
+@charset "utf-8"
+
+/*‾‾‾‾‾===================‾‾‾‾‾‾\
+|      ||  Page Styles  ||      |
+\______===================_____*/
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 html, body {
   margin: 0;
