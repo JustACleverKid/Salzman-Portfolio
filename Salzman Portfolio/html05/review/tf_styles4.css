@@ -60,8 +60,9 @@ aside.tips {
 }
 
 nav > ul {
+   display: flexbox;
    orientation: column;
-   
+   flex-wrap: wrap;
 }
 
 /* ===============================
@@ -69,9 +70,9 @@ nav > ul {
    ===============================
 */
 	
-
-
-
+@media only screen and (max-width: 480px) {
+   nav > ul display: ;
+}
 
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
