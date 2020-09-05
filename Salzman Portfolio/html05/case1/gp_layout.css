@@ -28,15 +28,26 @@ body {
    orientation: row;
 }
 
+section#sheet {
+   flex-grow: 3;
+   flex-shrink: 1;
+   flex-basis: 301px;
+}
 
+article {
+   flex-grow: 1;
+   flex-shrink: 3;
+   flex-basis: 180px;
+}
 
 /* ============================================
 	Mobile Devices: 0 - 480 pixels
    ============================================
 */
 
-
-
+@media only screen and (max-width: 480px) {
+   
+}
 
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
