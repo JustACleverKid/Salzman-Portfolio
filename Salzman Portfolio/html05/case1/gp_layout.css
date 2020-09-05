@@ -45,12 +45,27 @@ article {
    ============================================
 */
 
-@media only screen and (max-width: 480px) {
-   
+@media screen and (max-width: 480px) {
+   img.panel {
+      width: 100%;
+   }
+   nav {
+      order: 99;
+   }
+   body > footer {
+      order: 100;
+   }
 }
+
 
 /* ===================================================
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
 
+@media screen and (min-width: 481px) {
+   nav ul {
+      display: flexbox;
+      orientation: row;
+   }
+}
