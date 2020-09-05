@@ -28,13 +28,13 @@ body {
    flex-wrap: wrap;
 }
 
-#left {
+section#left {
    flex-grow: 1;
    flex-shrink: 8;
    flex-basis: 130px;
 }
 
-#right {
+section#right {
    flex-grow: 8;
    flex-shrink: 1;
    flex-basis: 351px;
@@ -59,7 +59,7 @@ aside.tips {
    flex-basis: 250px;
 }
 
-nav > ul {
+nav.horizontal > ul {
    display: flexbox;
    orientation: column;
    flex-wrap: wrap;
@@ -86,7 +86,7 @@ nav > ul {
    a#navicon {
       display: block;
    }
-   nav > ul {
+   nav.horizontal > ul {
       display: none;
    }
    a#navicon:hover+ul, nav.horizontal ul:hover {
