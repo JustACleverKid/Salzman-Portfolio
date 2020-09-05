@@ -64,8 +64,10 @@ article {
 */
 
 @media screen and (min-width: 481px) {
-   nav ul {
+   nav.horizontal ul {
       display: flexbox;
       orientation: row;
+      height: 40px;
+      flex-wrap: nowrap;
    }
 }
