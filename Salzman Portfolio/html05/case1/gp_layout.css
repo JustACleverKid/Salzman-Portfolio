@@ -70,4 +70,19 @@ article {
       height: 40px;
       flex-wrap: nowrap;
    }
+   ul li {
+      flex: 1, 1, auto;
+   }
+   img.size1 {
+      width: 100%;
+   }
+   img.size2 {
+      width: 60%;
+   }
+   img.size3 {
+      width: 40%;
+   }
+   img.size4 {
+      width: 30%;
+   }
 }
