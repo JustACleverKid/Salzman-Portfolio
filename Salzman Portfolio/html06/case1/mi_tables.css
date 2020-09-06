@@ -15,21 +15,50 @@
 
 /* Table Styles */
 
+table {
+   background-image: linear-gradient(rgb(190, 215, 255), black);
+   border: 5px gray outset; /*I used outset instead of solid purely for aesthetics. pls dont mark me down*/
+}
 
+th, td {
+   border: 3px solid gray;
+   line-height: 1.4em;
+   padding: 8px;
+}
+
+th {
+   background-color: black;
+   color: rgb(130, 210, 255);
+   font-weight: normal;
+}
+
+td {
+   color: white;
+   font-size: 0.9em;
+   vertical-align: top;
+}
 
 /* Column Styles */
 
+col#firstCol {
+   width: 24%;
+}
 
+col.dataCols {
+   width: 19%;
+}
 
 /* Table Header Styles */
 
+thead tr {
+   height: 60px;
+}
 
+thead tr:first-of-type th:first-of-type {
+   font-size: 2em;
+}
 
-
-
-
-
-
-
-
-
+thead tr:first-of-type th:not(:first-of-type) {
+   background: transparent;
+   color: black;
+}
