@@ -32,13 +32,27 @@ body {
    margin: 0px auto;				   
    max-width: 1024px;
 }
-body > header {
-   text-align: center;	
-	text-align: center;	
-	display: flex;
-	flex-flow: row;
-	height: 40px;
-	flex-wrap: nowrap;
+aside li {
+   display: block;
+   display: flexbox;
+   flex-flow: row;
+   height: 40px;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 30px;
+   flex-wrap: nowrap;
+}
+
+header > nav li {
+   display: block;
+   display: flexbox;
+   flex-flow: row;
+   height: 40px;
+   width: 100%;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 30px;
+   flex-wrap: nowrap;
 }
 
 h1 {
