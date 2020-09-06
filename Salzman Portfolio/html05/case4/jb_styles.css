@@ -74,7 +74,8 @@ nav > ul > li {
 }
 
 a {
-   text-decoration: none;
+   text-decoration: overline;
+   text-decoration: underline;
    color: red;
 
 }
@@ -89,7 +90,7 @@ h1 {
 
 h2 {
    color: rgb(80, 0, 0);
-   font-size: 12pt;
+   font-size: 24pt;
    font-weight: 400;
    font-variant-caps: normal;
 }
@@ -112,8 +113,14 @@ section {
    padding: 0%;
    margin: 5%;
    width: 90%;
-   height: 800px;
    list-style: none;
+}
+footer {
+   clear: both;
+   background-color: black;
+}
+footer p {
+   color: white;
 }
 
 /* iPhones and stuff */
@@ -121,6 +128,9 @@ section {
 @media screen and (max-width: 480px) {
    section.section2, img.sidebar {
       display: none;
+   }
+   h1 {
+      text-align: center;
    }
 }
 
@@ -147,6 +157,7 @@ section {
       display: block;
       float: right;
       background: rosybrown;
+      height: auto;
    }
    section dd {
    display: block;
@@ -157,10 +168,10 @@ section {
    line-height: 40px;
    color: rgb(100, 70, 0);
    font-weight: bold;
-   font-size: 0.75em;
-   text-align: left;
+   font-size: 1.25em;
+   text-align: right;
    }
-   section dd {
+   section dt {
       display: block;
       background: none;
       padding: 5px;
@@ -169,10 +180,13 @@ section {
       line-height: 40px;
       color: rgb(0, 70, 100);
       font-weight: bold;
-      font-size: 0.75em;
-      text-align: right;
+      font-size: 1.25em;
+      text-align: left;
    }
-   footer {
-      clear: both;
-   }
+}
+
+/*very important styles (override previous)*/
+
+aside ul li a {
+   color: teal;
 }
