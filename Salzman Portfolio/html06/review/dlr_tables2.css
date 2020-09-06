@@ -23,9 +23,34 @@ table.programs {
    font-family: Arial, Verdana, sans-serif;
 }
 
+tr {
+   height: 25px;
+}
+
+th, td {
+   border-color: gray;
+   border-width: 1px;
+   border-style: solid;
+   vertical-align: top;
+   padding: 5px;
+}
+
 /* Table Caption Styles */
 
+caption {
+   text-align: center;
+   caption-side: bottom;
+}
 
+col.timeColumn {
+   width: 10%;
+   background-color: rgb(215, 205, 151);
+}
+
+col.wDayColumns {
+   width: 11%;
+   background-color: rgb(236, 255, 211);
+}
 
 /* Table Column Styles */
 
