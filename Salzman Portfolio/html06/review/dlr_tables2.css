@@ -16,7 +16,12 @@
 
 /* Table Styles */
 
-
+table.programs {
+   width: 100%;
+   border: 15px rgb(151, 151, 151) outset;
+   border-collapse: collapse;
+   font-family: Arial, Verdana, sans-serif;
+}
 
 /* Table Caption Styles */
 
