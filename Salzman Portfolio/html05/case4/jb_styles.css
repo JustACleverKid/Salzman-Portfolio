@@ -71,7 +71,7 @@ a {
 
 }
 
-/* "h" headers (h1, h2, etc.) */
+/* "h" headers (h1, h2, etc.) and dd+dt lists */
 
 h1 {
    font-size: 16pt;
@@ -81,12 +81,19 @@ h1 {
 
 h2 {
    color: rgb(80, 0, 0);
-
+   font-size: 12pt;
+   font-weight: 400;
+   font-variant-caps: normal;
 }
 
 /* iPhones and stuff */
 
+@media screen and (max-width: 480px) {
 
+}
 
 /* Big Boi PC's and Tablets */
 
+@media screen and (min-width: 481px) {
+   
+}
