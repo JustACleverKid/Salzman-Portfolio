@@ -32,15 +32,24 @@ body {
    margin: 0px auto;				   
    max-width: 1024px;
 }
-aside li {
-   display: block;
-   display: flexbox;
-   flex-flow: row;
+aside > ul {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   padding: 5px;
+   margin: 5px;
+   list-style: none;
+}
+aside > ul > li {
+   background: none;
+   padding: 5px;
    height: 40px;
-   flex-grow: 1;
-   flex-shrink: 1;
-   flex-basis: 30px;
-   flex-wrap: nowrap;
+   margin-top: 10px;
+   line-height: 40px;
+   color: rgb(30, 90, 120);
+   font-weight: normal;
+   font-size: 1em;
+   text-align: left;
 }
 
 header > nav > ul {
@@ -50,7 +59,6 @@ header > nav > ul {
    padding: 5px;
    margin: 5px;
    list-style: none;
- 
 }
 
 nav > ul > li {
@@ -86,14 +94,85 @@ h2 {
    font-variant-caps: normal;
 }
 
+/* Image Orientation */
+
+img.sidebar {
+   width: 25%;
+   float: right;
+}
+img.logo {
+   width: 100%;
+   float: left;
+}
+
+section {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   padding: 0%;
+   margin: 5%;
+   width: 90%;
+   height: 800px;
+   list-style: none;
+}
+
 /* iPhones and stuff */
 
 @media screen and (max-width: 480px) {
-
+   section.section2, img.sidebar {
+      display: none;
+   }
 }
 
 /* Big Boi PC's and Tablets */
 
 @media screen and (min-width: 481px) {
-   
+   article.article1 {
+      display: block;
+      float: left;
+      width: 65%;
+   }
+   article.article2 {
+      display: block;
+      float: right;
+      width: 35%;
+      background: rgb(193, 240, 140);
+   }
+   section.section1 {
+      display: block;
+      float: right;
+      background: transparent;
+   }
+   section.section2 {
+      display: block;
+      float: right;
+      background: rosybrown;
+   }
+   section dd {
+   display: block;
+   background: none;
+   padding: 5px;
+   height: 40px;
+   margin-top: 10px;
+   line-height: 40px;
+   color: rgb(100, 70, 0);
+   font-weight: bold;
+   font-size: 0.75em;
+   text-align: left;
+   }
+   section dd {
+      display: block;
+      background: none;
+      padding: 5px;
+      height: 40px;
+      margin-top: 10px;
+      line-height: 40px;
+      color: rgb(0, 70, 100);
+      font-weight: bold;
+      font-size: 0.75em;
+      text-align: right;
+   }
+   footer {
+      clear: both;
+   }
 }
