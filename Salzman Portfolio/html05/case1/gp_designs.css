@@ -40,9 +40,8 @@ body > header {
 
 body > header > img {
 	display: inline;
-	width: 70%;
 	max-width: 400px;
-   text-align: center;
+    text-align: center;
 }
 
 
