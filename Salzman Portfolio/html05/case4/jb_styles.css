@@ -43,16 +43,32 @@ aside li {
    flex-wrap: nowrap;
 }
 
-header > nav li {
-   display: block;
-   display: flexbox;
-   flex-flow: row;
+header > nav > ul {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   padding: 5px;
+   margin: 5px;
+   list-style: none;
+ 
+}
+
+nav > ul > li {
+   background: none;
+   padding: 5px;
    height: 40px;
-   width: 100%;
-   flex-grow: 1;
-   flex-shrink: 1;
-   flex-basis: 30px;
-   flex-wrap: nowrap;
+   margin-top: 10px;
+   line-height: 40px;
+   color: rgb(50, 200, 70);
+   font-weight: bold;
+   font-size: 3em;
+   text-align: center;
+}
+
+a {
+   text-decoration: none;
+   color: red;
+
 }
 
 /* "h" headers (h1, h2, etc.) */
@@ -64,8 +80,8 @@ h1 {
 }
 
 h2 {
-   color: rgb(40, 0, 0);
-   
+   color: rgb(80, 0, 0);
+
 }
 
 /* iPhones and stuff */
