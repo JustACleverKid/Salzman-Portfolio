@@ -42,6 +42,8 @@ caption {
    caption-side: bottom;
 }
 
+/* Table Column Styles */
+
 col.timeColumn {
    width: 10%;
    background-color: rgb(215, 205, 151);
@@ -52,19 +54,29 @@ col.wDayColumns {
    background-color: rgb(236, 255, 211);
 }
 
-/* Table Column Styles */
-
-
+col.wEndColumns {
+   width: 17%;
+   background-color: rgb(255, 231, 255)
+}
 
 /* Table Header Styles */
 
+thead {
+   color: white;
+   background-color: rgb(105, 177, 160);
+}
 
+th:first-of-type {
+   background-color: rgb(153, 86, 7);
+}
+
+th:nth-of-type(7), th:nth-of-type(8) {
+   background-color: rgb(153, 0, 153);
+}
 
 /* Table Footer Styles */
 
-
-
-
-
-
-
+tfoot {
+   color: white;
+   background-color: black;
+}
