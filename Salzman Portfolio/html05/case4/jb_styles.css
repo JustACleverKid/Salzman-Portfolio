@@ -55,10 +55,22 @@ header > nav li {
    flex-wrap: nowrap;
 }
 
+/* "h" headers (h1, h2, etc.) */
+
 h1 {
    font-size: 16pt;
    font-weight: 550;
    font-variant-caps: small-caps;
 }
 
-/* */
+h2 {
+   color: rgb(40, 0, 0);
+   
+}
+
+/* iPhones and stuff */
+
+
+
+/* Big Boi PC's and Tablets */
+
