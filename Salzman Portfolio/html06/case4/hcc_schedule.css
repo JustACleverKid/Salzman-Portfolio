@@ -13,7 +13,20 @@ Filename:         hcc_schedule.css
 Supporting Files:
 */    
 
+html {
+   background-color: rgb(255, 238, 255);
+}
 
+body {
+   background-color: #ffffbb;
+   padding: 3px;
+   max-width: 1024px;
+   margin-left: auto;
+   margin-right: auto;
+   -webkit-box-shadow: 10px 10px 5px 0px rgb(170,0,170);
+   -moz-box-shadow: 10px 10px 5px 0px rgb(170,0,170);
+   box-shadow: 10px 10px 5px 0px rgb(170,0,170);
+}
 
 /*Header Styles*/
 
@@ -21,7 +34,20 @@ Supporting Files:
 
 /*Nav Styles*/
 
+nav ul {
+   display: flex;
+}
 
+nav li a {
+   text-decoration: none;
+   color: purple;
+}
+
+nav li {
+   
+   width: 200px;
+   text-decoration: none;
+}
 
 /*Article Styles*/
 
@@ -33,11 +59,88 @@ Supporting Files:
 
 /*Table Styles*/
 
+table {
+   background-color: rgb(255, 192, 128);
+   border: 15px gray inset;
+   border-collapse: collapse;
+   width: 95%;
+   margin-left:  auto;
+   margin-right: auto;
+   -webkit-box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+   -moz-box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+   box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+}
 
+th, td {
+   border: 3px solid gray;
+   line-height: 1.4em;
+   padding: 8px;
+}
 
-/*Aside Styles*/
+th {
+   background-color: rgb(64, 0, 0);
+   color: rgb(32, 210, 64);
+   font-weight: normal;
+}
 
+td {
+   color: rgb(64, 0, 96);
+   font-size: 0.9em;
+   vertical-align: top;
+}
 
+/* Column Styles */
+
+col#firstCol {
+   width: 8%;
+   color: white;
+   background-color: navy;
+}
+
+col.dataCols {
+   width: 7%;
+}
+
+caption {
+   color: rgb(72, 96, 0);
+}
+
+/* Table Header Styles */
+
+thead tr {
+   height: 60px;
+}
+
+thead tr:first-of-type th:first-of-type {
+   font-size: 2em;
+}
+
+/*Aside and Section Styles*/
+
+strong {
+   font-size: 14pt;
+}
+
+section {
+   width: 90%;
+   background-color: peachpuff;
+   -webkit-box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+   -moz-box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+   box-shadow: 10px 10px 5px 0px rgb(170,170,110);
+   margin-left:  auto;
+   margin-right: auto;
+   padding: 3%;
+}
+
+dt{
+   text-align: left;
+   color: rgb(0, 64, 0);
+}
+
+dd {
+   text-align: right;
+   color: rgb(0, 0, 96);
+}
 
 /*Footer Styles*/
 
