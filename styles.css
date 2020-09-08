@@ -9,13 +9,46 @@
 }
 
 
-html, body {
+html {
+  margin: 15px;
+  border: 5px;
+  padding: 5px;
+  width: 100%;
+  background-color: rgb(171, 255, 87);
+}
+
+body {
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: #99ffff;
+  width: 95%;
+  max-width: 1024px;
+  margin: auto auto auto auto;
+  background-color: rgb(87, 255, 255);
 }
-
+@media screen and (max-width: 500px) {
+  html {
+    margin: 3px;
+    border: 1px;
+    padding: 1px;
+    width: 100%;
+    background-color: rgb(171, 255, 87);
+  }
+  body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(87, 255, 255);
+  }
+  main {
+    width: 100%;
+    padding: 0px;
+  }
+  main > h1 {
+    font-size: 16pt;
+  }
+}
 main {
   margin: auto;
   width: 100%;
@@ -24,17 +57,18 @@ main {
 
 main > h1 {
   text-align: center;
-  font-size: 3.5em;
+  font-size: 32pt;
 }
 
-nav > ul > li {
-  font-size: 1em;
+nav {
+  display: flex;
+  flex-flow: row wrap;
 }
-nav > ul > ul > li {
+
+nav > ul {
   font-size: 1.5em;
-  display: none;
-}
-nav > ul > li:hover {
-  font-size: 1.5em;
-  display: block;
+  width: auto;
+  flex-basis: 100px;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
