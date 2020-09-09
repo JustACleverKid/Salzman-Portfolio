@@ -10,6 +10,7 @@
 
 
 html {
+  list-style: none;
   margin: 15px;
   border: 5px;
   padding: 5px;
@@ -32,14 +33,14 @@ body {
     border: 1px;
     padding: 1px;
     width: 100%;
-    background-color: rgb(171, 255, 87);
+    background-color: hsl(45, 100%, 67%);
   }
   body {
     margin: 0;
     border: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(87, 255, 255);
+    background-color: hsl(135, 100%, 67%);
   }
   main {
     width: 100%;
@@ -61,19 +62,22 @@ main > h1 {
 }
 
 .flex-container {
-  display: flex;
+  background: hsl(225, 100%, 67%);
+  display: flexbox;
   flex-flow: row;
-  justify-content: space-around;
+  align-content: stretch;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 
-.flex-item {
-  background: hsl(270, 100%, 67%);
+ul.flex-item {
+  background: hsl(315, 100%, 67%);
   padding: 5px;
+  display: flex;
   width: 100%;
   margin-top: 10px;
+  list-style: none;
   color: white;
   font-weight: bold;
   font-size: 16pt;
