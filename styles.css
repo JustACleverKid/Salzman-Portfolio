@@ -24,7 +24,7 @@ body {
   width: 95%;
   max-width: 1024px;
   margin: auto auto auto auto;
-  background-color: rgb(87, 255, 255);
+  background-color: hsl(180, 100%, 67%);
 }
 @media screen and (max-width: 500px) {
   html {
@@ -60,15 +60,22 @@ main > h1 {
   font-size: 32pt;
 }
 
-nav {
+.flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-nav > ul {
-  font-size: 1.5em;
-  width: auto;
-  flex-basis: 100px;
-  flex-grow: 1;
-  flex-shrink: 0;
+.flex-item {
+  background: hsl(270, 100%, 67%);
+  padding: 5px;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
 }
