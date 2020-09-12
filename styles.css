@@ -15,7 +15,7 @@ html {
   border: 5px;
   padding: 5px;
   width: 100%;
-  background-color: rgb(171, 255, 87);
+  background-color: hsl(90, 100%, 85%);
 }
 
 body {
@@ -72,7 +72,7 @@ main > h1 {
 }
 
 ul.flex-item {
-  background: hsl(315, 100%, 90%);
+  background: hsl(25, 100%, 90%);
   padding: 5px;
   display: flex;
   width: 100%;
