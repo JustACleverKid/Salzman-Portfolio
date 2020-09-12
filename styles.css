@@ -25,7 +25,7 @@ body {
   width: 95%;
   max-width: 1024px;
   margin: auto auto auto auto;
-  background-color: hsl(180, 100%, 67%);
+  background-color: hsl(180, 100%, 90%);
 }
 @media screen and (max-width: 500px) {
   html {
@@ -33,14 +33,14 @@ body {
     border: 1px;
     padding: 1px;
     width: 100%;
-    background-color: hsl(45, 100%, 67%);
+    background-color: hsl(45, 100%, 90%);
   }
   body {
     margin: 0;
     border: 0;
     padding: 0;
     width: 100%;
-    background-color: hsl(135, 100%, 67%);
+    background-color: hsl(135, 100%, 90%);
   }
   main {
     width: 100%;
@@ -62,7 +62,7 @@ main > h1 {
 }
 
 .flex-container {
-  background: hsl(225, 100%, 67%);
+  background: hsl(225, 100%, 90%);
   display: flexbox;
   flex-flow: row;
   align-content: stretch;
@@ -72,7 +72,7 @@ main > h1 {
 }
 
 ul.flex-item {
-  background: hsl(315, 100%, 67%);
+  background: hsl(315, 100%, 90%);
   padding: 5px;
   display: flex;
   width: 100%;
