@@ -82,3 +82,7 @@ ul.flex-item {
   font-size: 16pt;
   text-align: center;
 }
+
+nav {
+  columns: 2;
+}
