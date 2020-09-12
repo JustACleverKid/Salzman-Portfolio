@@ -64,18 +64,17 @@ main > h1 {
 .flex-container {
   background: hsl(225, 100%, 90%);
   display: flexbox;
-  flex-flow: row;
-  align-content: stretch;
+  flex-flow: row wrap;
+  justify-content: space-around;
   padding: 0;
-  margin: 0;
+  margin-right: 50px;
   width: 100%;
 }
 
 ul.flex-item {
   background: hsl(25, 100%, 90%);
   padding: 5px;
-  display: flex;
-  width: 100%;
+  width: 125px;
   margin-top: 10px;
   list-style: none;
   color: white;
