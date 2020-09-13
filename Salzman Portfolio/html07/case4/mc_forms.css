@@ -1,2 +1,17 @@
 @charset "utf-8";
 
+
+/*Stylesheet for Millennium Computers*/
+
+
+input:focus:invalid {
+    background: rgb(255, 220, 220) url(mc_invalid.png) bottom right/contain no-repeat;
+ }
+
+ input:focus:valid, select:focus:valid, textarea:focus:valid {
+    background: rgb(220, 255, 220)
+ }
+
+ input:focus:valid, textarea:focus:valid {
+    background: rgb(220, 255, 220) url(mc_valid.png) bottom right/contain no-repeat;
+ }

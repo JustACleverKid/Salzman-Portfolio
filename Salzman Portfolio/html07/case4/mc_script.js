@@ -25,7 +25,7 @@ window.onload = setForm;
 
 function setForm() {
    document.forms[0].onsubmit = function() {
-      if (this.checkValidity()) alert("Your form has been submitted successfully!");
+      if (this.checkValidity()) alert("Your order has been placed successfully!");
       return false;
    }
 }

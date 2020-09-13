@@ -1,2 +1,23 @@
 @charset "utf-8";
 
+
+
+/*Stylesheet for Millennium Computers*/
+
+
+
+html {
+    background-color: rgb(240, 255, 240)
+}
+
+body {
+    background-color: rgb(249, 235, 255);
+    width: 95%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body header {
+    background-color: rgb(220, 220, 255);
+}

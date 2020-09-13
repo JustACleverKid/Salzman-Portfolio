@@ -7,7 +7,7 @@
       Tutorial 7
       Case Problem 1
 
-      Millenium Computers Order Form
+      Millennium Computers Order Form
       Author: 
       Date:   
 
@@ -17,30 +17,44 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Millenium Computers Order Form</title>
+    <title>Millennium Computers Order Form</title>
     <link href="mc_forms.css" rel="stylesheet" />
     <link href="mc_styles.css" rel="stylesheet" />
     <script type="text/javascript" src="mc_script.js"></script>
 </head>
+
 <body>
-    <h2>Millenium Computers Order Form</h2>
+    <header>
+        <h2>Millennium Computers Order Form</h2>
+        <p>
+            Thank you for choosing Millennium Computers! Here, we allow
+            our users to fully customize their computers to fit their
+            needs and price range.
+        </p>
+    </header>
     <form action="http://www.example.com/cg/register" name="cForm" method="POST">
         <div><label for="fnBox">First Name</label>
-        <input id="fnBox" name="fName" type="text" placeholder="" required></div>
+            <input id="fnBox" name="fName" type="text" placeholder="" required></div>
         <div><label for="lnBox">Last Name</label>
-        <input id="lnBox" name="lName" type="text" placeholder="" required></div>
+            <input id="lnBox" name="lName" type="text" placeholder="" required></div>
         <div><label for="streetBox">Street</label>
-        <input id="streetBox" name="street" type="text" placeholder="" required></div>
+            <input id="streetBox" name="street" type="text" placeholder="" required></div>
         <div><label for="cityBox">City</label>
-        <input id="cityBox" name="street" type="text" placeholder="" required></div>
+            <input id="cityBox" name="street" type="text" placeholder="" required></div>
         <div><label for="stateBox">State</label>
-        <input id="stateBox" name="street" type="text" placeholder="" required></div>
+            <input id="stateBox" name="street" type="text" placeholder="" required></div>
         <div><label for="zipBox">Zip/Postal Code</label>
-        <input id="zipBox" name="street" type="text" placeholder="nnnnn" required pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"></div>
+            <input id="zipBox" name="street" type="text" placeholder="nnnnn" required
+                pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"></div>
         <div><label for="mailBox">Email</label>
-        <input id="mailBox" name="email" type="email" placeholder="yourname@example.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
+            <input id="mailBox" name="email" type="email" placeholder="yourname@example.com" required
+                pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
         <div><label for="phoneBox">Phone Number</label>
-        <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"></div>
+            <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"></div>
+        <div><label for="creditBox">Credit Card Number</label>
+            <input id="creditBox" name="creditCardNumber" type="text" placeholder="nnnn-nnnn-nnnn-nnnn" required
+                pattern="^(\d{4}-){3}\d{4}$|^(\d{4} ){3}\d{4}$|^\d{16}$"></div>
         <div>
             <label for="speedBox">Processor Speed</label>
             <select name="pSpeed" id="speedBox">
@@ -77,29 +91,37 @@
             </select>
         </div>
         <div>
-            
+            <label>Include DVD Burner</label>
+            <input type="radio" name="dvd" value="no">No
+            <input type="radio" name="dvd" value="yes">Yes
         </div>
         <div>
-            
+            <label>Include Tuner Card</label>
+            <input type="radio" name="tuner" value="no">No
+            <input type="radio" name="tuner" value="yes">Yes
         </div>
         <div>
-            
+            <label>Include Media Card Reader</label>
+            <input type="radio" name="mcard" value="no">No
+            <input type="radio" name="mcard" value="yes">Yes
         </div>
         <div>
-            
+            <input type="checkbox" name="warranty" value="Yes">
+            <label>Purchase 24 Month Extended Warranty</label>
         </div>
         <div>
-            
+            <label for="commentBox">Comments or Additional Information</label>
+            <textarea name="comments" id="commentBox" placeholder="Comments"></textarea>
         </div>
         <button type="button">
             Contact Me
-         </button>
+        </button>
         <button type="reset">
             Cancel Order
-         </button>
+        </button>
         <button type="submit">
             Send Order
-         </button>
+        </button>
     </form>
 </body>
 
@@ -107,6 +129,7 @@
     For the email validation, I used the site
     regexlib, a helpful html site with public
     domain regular expressions for users to copy.
-    https://regexlib.com/REDetails.aspx?regexp_id=21 ( EMAIL )
-    https://regexlib.com/REDetails.aspx?regexp_id=23 (  ZIP  )
+    https://regexlib.com/REDetails.aspx?regexp_id=21  ( EMAIL ADDRESS )
+    https://regexlib.com/REDetails.aspx?regexp_id=23  (  POSTAL CODE  )
+    https://regexlib.com/REDetails.aspx?regexp_id=529 (  CREDIT CARD  )
 |-->
