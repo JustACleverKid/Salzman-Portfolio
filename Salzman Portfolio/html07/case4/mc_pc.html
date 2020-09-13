@@ -17,12 +17,13 @@
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CGIP Registration Form</title>
+    <title>Millenium Computers Order Form</title>
     <link href="mc_forms.css" rel="stylesheet" />
     <link href="mc_styles.css" rel="stylesheet" />
     <script type="text/javascript" src="mc_script.js"></script>
 </head>
 <body>
+    <h2>Millenium Computers Order Form</h2>
     <form action="http://www.example.com/cg/register" name="cForm" method="POST">
         <div><label for="fnBox">First Name</label>
         <input id="fnBox" name="fName" type="text" placeholder="" required></div>
@@ -35,7 +36,7 @@
         <div><label for="stateBox">State</label>
         <input id="stateBox" name="street" type="text" placeholder="" required></div>
         <div><label for="zipBox">Zip/Postal Code</label>
-        <input id="zipBox" name="street" type="text" placeholder="" required></div>
+        <input id="zipBox" name="street" type="text" placeholder="" required pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"></div>
         <div><label for="mailBox">Email</label>
         <input id="mailBox" name="email" type="email" placeholder="yourname@example.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
         <div><label for="phoneBox">Phone Number</label>
@@ -47,5 +48,6 @@
     For the email validation, I used the site
     regexlib, a helpful html site with public
     domain regular expressions for users to copy.
-    https://regexlib.com/REDetails.aspx?regexp_id=21
+    https://regexlib.com/REDetails.aspx?regexp_id=21 ( EMAIL )
+    https://regexlib.com/REDetails.aspx?regexp_id=23 (  ZIP  )
 |-->
