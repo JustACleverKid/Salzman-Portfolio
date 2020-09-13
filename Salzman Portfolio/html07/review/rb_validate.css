@@ -15,7 +15,7 @@
 /* Validation Styles */
 
 input:focus, select:focus, textarea:focus {
-   color: rgb(255, 255, 180);
+   background-color: rgb(255, 255, 180);
 }
 
 #nameBox:focus:valid, #phoneBox:focus:valid {
