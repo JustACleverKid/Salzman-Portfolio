@@ -55,8 +55,26 @@
       <p>Required Item (*)</p>
    </section>
    <form action="http://www.example.com/cg/register" method="POST">
+      <datalist id="titleList">
+         <option value="Mr.">
+         <option value="Mrs.">
+         <option value="Prof.">
+         <option value="Dr.">
+         <option value="Assist. Prof.">
+         <option value="Prof.">
+         <option value="Assoc. Prof.">
+      </datalist>
+      <label for="regList">Registration Category</label>
+      <select id="regList" name="registerType">
+         <option value="member">ACGIP Member</option>
+         <option value="nonmember">Non-Member</option>
+         <option value="student">Student</option>
+         <option value="poster">Poster</option>
+         <option value="guest">Guest</option>
+         <option value="select" disabled selected>Select a Registration Category</option>
+      </select>
       <label for="titleBox">Title</label>
-      <input id="titleBox" name="title" type="text" placeholder="">
+      <input id="titleBox" list="titleList" name="title" type="text" placeholder="">
       <label for="fnBox">First Name</label>
       <input id="fnBox" name="firstName" type="text" placeholder="" required>
       <label for="lnBox">Last Name</label>
@@ -71,6 +89,11 @@
       <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
       <label for="idBox">ACGIP Membership Number</label>
       <input id="idBox" name="acgpID" type="text" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$">
+      <p>
+         <button type="submit">
+            Continue
+         </button>
+      </p>
    </form>
    <aside>
       <dl>
