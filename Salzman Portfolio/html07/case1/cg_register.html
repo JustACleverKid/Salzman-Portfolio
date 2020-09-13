@@ -68,9 +68,9 @@
       <label for="mailBox">Email</label>
       <input id="mailBox" name="email" type="email" placeholder="" required>
       <label for="phoneBox">Phone Number</label>
-      <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required>
+      <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
       <label for="idBox">ACGIP Membership Number</label>
-      <input id="idBox" name="acgpID" type="text" placeholder="acgip-nnnnnn">
+      <input id="idBox" name="acgpID" type="text" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$">
    </form>
    <aside>
       <dl>
@@ -80,7 +80,7 @@
          <dd>Eligible to attend all sessions and banquet</dd>
          <dt>Student ($310)</dt>
          <dd>Eligible to attend all sessions. <a href="#">Proof</a> of
-             student status required</dd>
+         student status required</dd>
          <dt>Poster ($95)</dt>
          <dd>Eligible to attend display hall and vendor stations</dd>
          <dt>Guest ($35)</dt>
