@@ -19,6 +19,9 @@
    <title>CGIP Registration Form</title>
    <link href="cg_base.css" rel="stylesheet" />
    <link href="cg_styles.css" rel="stylesheet" />
+   <link href="cg_forms.css" rel="stylesheet" />
+   <link href="cg_validate.css" rel="stylesheet" />
+   <script type="text/javascript" src="cg_script.js"></script>
 </head>
 
 <body>
@@ -50,9 +53,25 @@
    <section>
       <h1>Conference Registration Form</h1>
       <p>Required Item (*)</p>
-      
    </section>
-   
+   <form action="http://www.example.com/cg/register" method="POST">
+      <label for="titleBox">Title</label>
+      <input id="titleBox" name="title" type="text" placeholder="">
+      <label for="fnBox">First Name</label>
+      <input id="fnBox" name="firstName" type="text" placeholder="" required>
+      <label for="lnBox">Last Name</label>
+      <input id="lnBox" name="lastName" type="text" placeholder="" required>
+      <label for="addBox">Address</label>
+      <input id="addBox" name="address" type="text" placeholder="" required>
+      <label for="groupBox">Company or University</label>
+      <input id="groupBox" name="group" type="text" placeholder="">
+      <label for="mailBox">Email</label>
+      <input id="mailBox" name="email" type="email" placeholder="" required>
+      <label for="phoneBox">Phone Number</label>
+      <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required>
+      <label for="idBox">ACGIP Membership Number</label>
+      <input id="idBox" name="acgpID" type="text" placeholder="acgip-nnnnnn">
+   </form>
    <aside>
       <dl>
          <dt>ACGIP Member ($695)</dt>
