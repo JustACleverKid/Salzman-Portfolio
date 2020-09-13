@@ -22,3 +22,23 @@
     <link href="mc_styles.css" rel="stylesheet" />
     <script type="text/javascript" src="mc_script.js"></script>
 </head>
+<body>
+    <form action="http://www.example.com/cg/register" name="cForm" method="POST">
+        <div><label for="fnBox">First Name</label>
+        <input id="fnBox" name="fName" type="text" placeholder="" required></div>
+        <div><label for="lnBox">Last Name</label>
+        <input id="lnBox" name="lName" type="text" placeholder="" required></div>
+        <div><label for="streetBox">Street</label>
+        <input id="streetBox" name="street" type="text" placeholder="" required></div>
+        <div><label for="cityBox">City</label>
+        <input id="cityBox" name="street" type="text" placeholder="" required></div>
+        <div><label for="stateBox">State</label>
+        <input id="stateBox" name="street" type="text" placeholder="" required></div>
+        <div><label for="zipBox">Zip/Postal Code</label>
+        <input id="zipBox" name="street" type="text" placeholder="" required></div>
+        <div><label for="mailBox">Email</label>
+        <input id="mailBox" name="email" type="email" placeholder="" required></div>
+        <div><label for="phoneBox">Phone Number</label>
+        <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"></div>
+    </form>
+</body>
