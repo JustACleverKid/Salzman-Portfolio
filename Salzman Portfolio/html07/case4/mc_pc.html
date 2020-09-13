@@ -37,8 +37,15 @@
         <div><label for="zipBox">Zip/Postal Code</label>
         <input id="zipBox" name="street" type="text" placeholder="" required></div>
         <div><label for="mailBox">Email</label>
-        <input id="mailBox" name="email" type="email" placeholder="" required></div>
+        <input id="mailBox" name="email" type="email" placeholder="yourname@example.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
         <div><label for="phoneBox">Phone Number</label>
         <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"></div>
     </form>
 </body>
+
+<!--|
+    For the email validation, I used the site
+    regexlib, a helpful html site with public
+    domain regular expressions for users to copy.
+    https://regexlib.com/REDetails.aspx?regexp_id=21
+|-->
