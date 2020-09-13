@@ -15,7 +15,7 @@ html {
   border: 5px;
   padding: 5px;
   width: 100%;
-  background-color: hsl(90, 100%, 85%);
+  background-color: #BCC1BA;
 }
 
 body {
@@ -25,31 +25,12 @@ body {
   width: 95%;
   max-width: 1024px;
   margin: auto auto auto auto;
-  background-color: hsl(180, 100%, 90%);
+  background-color: #F2E2D2;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
+  box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
 }
-@media screen and (max-width: 500px) {
-  html {
-    margin: 3px;
-    border: 1px;
-    padding: 1px;
-    width: 100%;
-    background-color: hsl(45, 100%, 90%);
-  }
-  body {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    width: 100%;
-    background-color: hsl(135, 100%, 90%);
-  }
-  main {
-    width: 100%;
-    padding: 0px;
-  }
-  main > h1 {
-    font-size: 16pt;
-  }
-}
+
 main {
   margin: auto;
   width: 100%;
@@ -62,7 +43,7 @@ main > h1 {
 }
 
 .flex-container {
-  background: hsl(225, 100%, 90%);
+  background: #84C0C6;
   display: flexbox;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -72,7 +53,7 @@ main > h1 {
 }
 
 ul.flex-item {
-  background: hsl(25, 100%, 90%);
+  background: #46B1C9;
   padding: 5px;
   width: 125px;
   margin-top: 10px;
@@ -86,4 +67,60 @@ ul.flex-item {
 nav {
   columns: 2;
   padding: 50px;
+}
+
+ul > ul > li a {
+  color: #ffbfb1;
+}
+
+nav > ul > li a {
+  color: #ffdfd7;
+}
+
+nav > ul > li {
+  list-style: none;
+  font-size: 2em;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+footer p a {
+  color: #ff512a;;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 500px) {
+  html {
+    margin: 3px;
+    border: 1px;
+    padding: 1px;
+    width: 100%;
+    background-color: #9FB7B9;
+  }
+  body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #84C0C6;
+  }
+  main {
+    width: 100%;
+    padding: 0px;
+  }
+  main > h1 {
+    font-size: 16pt;
+  }
+  nav {
+    columns: 1;
+    padding: 50px;
+  }
+  nav > ul > li {
+    list-style: none;
+  }
 }
