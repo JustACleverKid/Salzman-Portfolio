@@ -6,4 +6,4 @@ Review Assignment
 
 
 Phone Number Regular Expression
-
+^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$
