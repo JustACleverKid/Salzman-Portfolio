@@ -36,11 +36,22 @@
         <div><label for="stateBox">State</label>
         <input id="stateBox" name="street" type="text" placeholder="" required></div>
         <div><label for="zipBox">Zip/Postal Code</label>
-        <input id="zipBox" name="street" type="text" placeholder="" required pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"></div>
+        <input id="zipBox" name="street" type="text" placeholder="nnnnn" required pattern="^\d{5}-\d{4}|\d{5}|[A-Z]\d[A-Z] \d[A-Z]\d$"></div>
         <div><label for="mailBox">Email</label>
         <input id="mailBox" name="email" type="email" placeholder="yourname@example.com" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"></div>
         <div><label for="phoneBox">Phone Number</label>
         <input id="phoneBox" name="phoneNumber" type="tel" placeholder="(nnn) nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"></div>
+        
+        
+        <button type="button">
+            Contact Me
+         </button>
+        <button type="reset">
+            Cancel Order
+         </button>
+        <button type="submit">
+            Send Order
+         </button>
     </form>
 </body>
 
