@@ -20,8 +20,8 @@
             For the customer form, the script also disables and enables
             the delivery and pickup options so that only one set of
             options is enabled at any one time.
-
-
+      .
+   .
 */
 
 window.onload = init;
