@@ -71,7 +71,7 @@ ul.flex-item {
   text-align: center;
 }
 
-/* Nav Styles */
+/* Nav and List Styles */
 
 nav {
   columns: 2;
@@ -89,6 +89,14 @@ nav > ul > li a {
 nav > ul > li {
   list-style: none;
   font-size: 2em;
+}
+
+body > ul {
+  width: 90%;
+}
+
+body > ul h2 {
+  font-size: 1.5em;
 }
 
 /* Footer Styles */
