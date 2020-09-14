@@ -1,0 +1,124 @@
+@charset "utf-8";
+@media print {
+
+/*‾‾‾‾‾===================‾‾‾‾‾‾\
+|      ||  Page Styles  ||      |
+\______===================_____*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* General Styles */
+
+  a::after{
+    content: " (" attr(href) ") ";
+  }
+
+
+html {
+  list-style: none;
+  margin: 15px;
+  border: 5px;
+  padding: 5px;
+  width: 100%;
+  background-color: hsl(103, 5%, 74%);
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 95%;
+  max-width: 1024px;
+  margin: auto auto auto auto;
+  background-color: hsl(30, 55%, 89%);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
+  box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+main > h1::first-letter{
+  font-size: 1.25em;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 32pt;
+}
+
+/* Flex Styles */
+
+.flex-container {
+  background: #84C0C6;
+  display: flexbox;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin-right: 50px;
+  width: 100%;
+}
+
+ul.flex-item {
+  background: #46B1C9;
+  padding: 5px;
+  width: 125px;
+  margin-top: 10px;
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16pt;
+  text-align: center;
+}
+
+/* Nav and List Styles */
+
+nav {
+  columns: 2;
+  padding: 50px;
+}
+
+ul > ul > li a {
+  color: rgb(255, 191, 177);
+}
+
+nav > ul > li a {
+  color: rgb(255, 223, 215);
+}
+
+nav > ul > li {
+  list-style: none;
+  font-size: 2em;
+}
+
+body > ul {
+  width: 90%;
+}
+
+body > ul h2 {
+  font-size: 1.5em;
+}
+
+/* Footer Styles */
+
+footer:after {
+  clear: both;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+footer p a {
+  color: #ff512a;
+}
+
+};
