@@ -8,6 +8,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* General Styles */
 
 html {
   list-style: none;
@@ -15,7 +16,7 @@ html {
   border: 5px;
   padding: 5px;
   width: 100%;
-  background-color: #BCC1BA;
+  background-color: hsl(103, 5%, 74%);
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   width: 95%;
   max-width: 1024px;
   margin: auto auto auto auto;
-  background-color: #F2E2D2;
+  background-color: hsl(30, 55%, 89%);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
   box-shadow: 10px 10px 5px 0px rgba(159,183,185,1);
@@ -37,10 +38,16 @@ main {
   padding: 20px;
 }
 
+main > h1::first-letter{
+  font-size: 1.25em;
+}
+
 main > h1 {
   text-align: center;
   font-size: 32pt;
 }
+
+/* Flex Styles */
 
 .flex-container {
   background: #84C0C6;
@@ -64,22 +71,30 @@ ul.flex-item {
   text-align: center;
 }
 
+/* Nav Styles */
+
 nav {
   columns: 2;
   padding: 50px;
 }
 
 ul > ul > li a {
-  color: #ffbfb1;
+  color: rgb(255, 191, 177);
 }
 
 nav > ul > li a {
-  color: #ffdfd7;
+  color: rgb(255, 223, 215);
 }
 
 nav > ul > li {
   list-style: none;
   font-size: 2em;
+}
+
+/* Footer Styles */
+
+footer:after {
+  clear: both;
 }
 
 footer p {
@@ -89,7 +104,7 @@ footer p {
 }
 
 footer p a {
-  color: #ff512a;;
+  color: #ff512a;
 }
 
 /* Mobile Styles */
@@ -107,7 +122,7 @@ footer p a {
     border: 0;
     padding: 0;
     width: 100%;
-    background-color: #84C0C6;
+    background-color: hsl(185, 37%, 65%);
   }
   main {
     width: 100%;
