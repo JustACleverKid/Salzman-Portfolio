@@ -16,14 +16,23 @@ html {
   border: 5px;
   padding: 5px;
   width: 100%;
-  background-color: hsla(103, 5%, 74% 9);
-  background-image: url("Code.gif");
+  background-image: url("code-changecolor.gif");
+  background-color: hsla(103, 5%, 74%, 0.801);
+}
+
+figcaption {
+  text-align: center;
+  color: rgb(64, 0, 128);
+}
+
+.bookImage {
+  margin-left: 45%;
 }
 
 body {
+  border-radius: 25px;
   margin: 0;
-  border: 0;
-  padding: 5px;
+  padding: 15px;
   width: 95%;
   max-width: 1024px;
   margin: auto auto auto auto;
@@ -83,6 +92,7 @@ ul {
 }
 
 nav {
+  border-radius: 25px;
   columns: 2;
   padding: 50px;
 }
@@ -113,6 +123,11 @@ body > ul h2 {
 
 footer:after {
   clear: both;
+}
+
+footer {
+  border-radius: 20px;
+  background-color: rgb(188, 205, 255);
 }
 
 footer p {
