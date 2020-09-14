@@ -89,6 +89,7 @@ nav > ul > li a {
 nav > ul > li {
   list-style: none;
   font-size: 2em;
+  color: rgb(255, 218, 210);
 }
 
 body > ul {
