@@ -27,6 +27,7 @@ figcaption {
 
 .bookImage {
   margin-left: 45%;
+  transform: rotateZ(5%);
 }
 
 body {
