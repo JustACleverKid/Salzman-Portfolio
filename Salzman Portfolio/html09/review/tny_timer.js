@@ -19,14 +19,16 @@ function showClock() {
 
 document.getElementById("currentTime").innerHTML = "<span>" + localDate + "</span><span>" + localTime + "</span>";
 
-function nextJuly4(thisDay) {
-   var j4Date = new Date();  //should I include the ("July 4, 2018 21:00:00") in the parenthesis?
-}
-
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
    var jDate = new Date("July 4, 2018");
    jDate.setFullYear(cYear);
    if ((jDate - currentDate) < 0) jDate.setFullYear(cYear + 1);
    return jDate;
+   var j4Date = nextJuly4(thisDay)
 }
+
+var days = (nextJuly4 - thisDay)/(1000*60*60*24);
+var hrs  = (nextJuly4 - thisDay)/(1000*60*60*24);
+var mins = (nextJuly4 - thisDay)/(1000*60*60*24);
+var secs = (nextJuly4 - thisDay)/(1000*60*60*24);
