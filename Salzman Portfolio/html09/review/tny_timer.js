@@ -19,6 +19,10 @@ function showClock() {
 
 document.getElementById("currentTime").innerHTML = "<span>" + localDate + "</span><span>" + localTime + "</span>";
 
+function nextJuly4(thisDay) {
+   var j4Date = new Date();  //should I include the ("July 4, 2018 21:00:00") in the parenthesis?
+}
+
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
    var jDate = new Date("July 4, 2018");
