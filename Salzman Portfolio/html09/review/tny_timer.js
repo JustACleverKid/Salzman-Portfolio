@@ -13,7 +13,7 @@
 //run showClock Function
 
 showClock();
-setInterval("showClock", 1000);
+setInterval("showClock()", 1000);
 
 
 
@@ -43,14 +43,14 @@ function nextJuly4(currentDate) {
 //Set the time of nextJuly4 to 9:00 P.M.
 
 var j4Date = nextJuly4(thisDay);
-j4Date.setHours("21:00");
+j4Date.setHours(21);
 
 //added date variables and mapped them to ID's
 
-var days = (nextJuly4 - thisDay)/(1000*60*60*24);
+var days = (j4Date - thisDay)/(1000*60*60*24);
 var hrs  = (days - Math.floor(days))* 24;
-var mins = (hrs - Math.floor(days))* 60;
-var secs = (mins - Math.floor(days))* 60;
+var mins = (hrs - Math.floor(hrs))* 60;
+var secs = (mins - Math.floor(mins))* 60;
 
 document.getElementById("dLeft").textContent = Math.floor(days)
 document.getElementById("hLeft").textContent = Math.floor(hrs)
