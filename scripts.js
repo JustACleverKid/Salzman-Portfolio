@@ -1,10 +1,9 @@
 "use strict";
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
-   Tutorial 9
-   Review Assignment
+   Midterm Homepage
 
-   Event Timer
+   Class Timer
    Author: Jack Salzman
    Date:   9.15.2020
 
@@ -14,8 +13,6 @@
 
 showClock();
 setInterval("showClock()", 1000);
-
-
 
 function showClock() {
 
