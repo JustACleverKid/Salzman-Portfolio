@@ -25,10 +25,13 @@ function nextJuly4(currentDate) {
    jDate.setFullYear(cYear);
    if ((jDate - currentDate) < 0) jDate.setFullYear(cYear + 1);
    return jDate;
-   var j4Date = nextJuly4(thisDay)
 }
 
+var j4Date = nextJuly4(thisDay)
+var j4Date = setHours("21:00:00");
+
+
 var days = (nextJuly4 - thisDay)/(1000*60*60*24);
-var hrs  = (nextJuly4 - thisDay)/(1000*60*60*24);
-var mins = (nextJuly4 - thisDay)/(1000*60*60*24);
-var secs = (nextJuly4 - thisDay)/(1000*60*60*24);
+var hrs  = (days - Math.floor(days))* 24;
+var mins = (hrs - Math.floor(days))* 60;
+var secs = (mins - Math.floor(days))* 60;
