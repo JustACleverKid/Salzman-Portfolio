@@ -10,14 +10,27 @@
 
 */
 
+//run showClock Function
+
+showClock();
+setInterval("showClock", 1000);
+
+
+
 function showClock() {
-   var thisDay;
-   thisDay = new Date("May 19, 2018 9:31:27");
-   var localDate = thisDay.toLocaleDateString();
-   var localTime = thisDay.toLocaleTimeString();
-}
+
+//define the dates
+
+var thisDay;
+thisDay = new Date();
+var localDate = thisDay.toLocaleDateString();
+var localTime = thisDay.toLocaleTimeString();
+
+//local date and times
 
 document.getElementById("currentTime").innerHTML = "<span>" + localDate + "</span><span>" + localTime + "</span>";
+
+//Define the next instance of July 4
 
 function nextJuly4(currentDate) {
    var cYear = currentDate.getFullYear();
@@ -27,11 +40,20 @@ function nextJuly4(currentDate) {
    return jDate;
 }
 
-var j4Date = nextJuly4(thisDay)
-var j4Date = setHours("21:00:00");
+//Set the time of nextJuly4 to 9:00 P.M.
 
+var j4Date = nextJuly4(thisDay);
+j4Date.setHours("21:00");
+
+//added date variables and mapped them to ID's
 
 var days = (nextJuly4 - thisDay)/(1000*60*60*24);
 var hrs  = (days - Math.floor(days))* 24;
 var mins = (hrs - Math.floor(days))* 60;
 var secs = (mins - Math.floor(days))* 60;
+
+document.getElementById("dLeft").textContent = Math.floor(days)
+document.getElementById("hLeft").textContent = Math.floor(hrs)
+document.getElementById("mLeft").textContent = Math.floor(mins)
+document.getElementById("sLeft").textContent = Math.floor(secs)
+}
