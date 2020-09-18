@@ -18,8 +18,7 @@ function showClock() {
 
 //define the dates
 
-var thisDay;
-thisDay = new Date();
+var thisDay = new Date();
 var localDate = thisDay.toLocaleDateString();
 var localTime = thisDay.toLocaleTimeString();
 
@@ -27,7 +26,7 @@ var localTime = thisDay.toLocaleTimeString();
 
 document.getElementById("currentTime").innerHTML = "<span>" + localDate + "</span><span>" + localTime + "</span>";
 
-//Define the next instance of July 4
+//Define the end of the class
 
 function nextOctober7(currentDate) {
    var cYear = currentDate.getFullYear();
@@ -37,10 +36,10 @@ function nextOctober7(currentDate) {
    return jDate;
 }
 
-//Set the time of nextOctober7 to 9:00 P.M.
+//Set the time of nextOctober7 to 11:30 P.M.
 
 var o7Date = nextOctober7(thisDay);
-o7Date.setHours(21);
+o7Date.setHours(23.5);
 
 //added date variables and mapped them to ID's
 
