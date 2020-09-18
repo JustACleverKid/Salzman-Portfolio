@@ -4,8 +4,8 @@
    Case Problem 4
 
    Countdown Clock for Ticket Ordering
-   Author: 
-   Date:  
+   Author: Jack Salzman
+   Date:   Thursday, September 17
 
    Filename:   ph_clock.js     
 
