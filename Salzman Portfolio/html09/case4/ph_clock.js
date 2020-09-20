@@ -14,8 +14,8 @@
 
 /* Time left variables */
 
-var minsLeft = 0;
-var secsLeft = 15;
+var minsLeft = 30;
+var secsLeft = 0;
 var timeLeft = (minsLeft*60)+(secsLeft);
 
 /* Countdown */
