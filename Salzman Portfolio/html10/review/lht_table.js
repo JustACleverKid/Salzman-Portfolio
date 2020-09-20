@@ -5,8 +5,8 @@
    Tutorial 10
    Review Assignment
 
-   Author: 
-   Date:   
+      Author: Jack Salzman
+      Date:   Sunday 9/20
 
 	
 */
