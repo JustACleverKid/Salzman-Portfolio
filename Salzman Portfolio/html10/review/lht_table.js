@@ -17,7 +17,10 @@ var tableHTML = (
 );
 var endDate = new Date(thisDay.getTime() + 14*24*60*60*1000);
 for (var i = 0; i < eventDates; i++) {
-   var eventDate = new Date();
+   var eventDate = new Date(eventDates, i++);
    var eventDay = eventDate.toDateString();
    var eventTime = eventDate.toLocaleTimeString();
+   if (thisDay <= eventDate && eventDate <= endDate) {
+      tableHTML += "<tr><td>eventDay @ eventTime</td><td>eventDescriptions</td><td>eventPrices</td></tr>";
+   }
 }
