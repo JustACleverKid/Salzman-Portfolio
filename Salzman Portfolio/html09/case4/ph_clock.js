@@ -38,7 +38,7 @@ function Countdown() {
 /* Stop the Clock */
 
 function stopClock() {
-   document.getElementById("timeHead").insertAdjacentHTML("<br />(Order Expired)");
+   document.getElementById("TimeHead").insertAdjacentHTML("<br />(Order Expired)");
    clearInterval(clockID)
 }
 
