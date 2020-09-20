@@ -28,8 +28,8 @@ function Countdown() {
    secsLeft = timeLeft - (60*minsLeft);
    var minsString = addLeadingZero(minsLeft);
    var secsString = addLeadingZero(secsLeft);
-   document.getElementById("minutes").textContent(minsString);
-   document.getElementById("seconds").textContent(secsString);
+   document.getElementById("minutes").textContent = minsString;
+   document.getElementById("seconds").textContent = secsString;
    checkTimer();
    timeLeft = timeLeft - 1;
 }
