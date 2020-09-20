@@ -12,14 +12,15 @@
 
 */
 
-Countdown();
-setInterval("Countdown()", 1000);
-
 /* Time left variables */
 
 var minsLeft = 0;
 var secsLeft = 15;
 var timeLeft = (minsLeft*60)+(secsLeft);
+
+/* Countdown */
+
+var clockID = setInterval("Countdown()", 1000);
 
 /* Countdown Timer */
 
@@ -32,6 +33,13 @@ function Countdown() {
    document.getElementById("seconds").textContent = secsString;
    checkTimer();
    timeLeft = timeLeft - 1;
+}
+
+/* Stop the Clock */
+
+function stopClock() {
+   document.getElementById("timeHead").insertAdjacentHTML("<br />(Order Expired)");
+   clearInterval(clockID)
 }
 
 /* ------------------------------------------------- */
