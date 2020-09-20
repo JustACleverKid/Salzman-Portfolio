@@ -13,7 +13,9 @@
 */
 
 
-var minsLeft = 0
+var minsLeft = 0;
+var secsLeft = 15;
+var timeLeft = (minsLeft*60)+(secsLeft);
 
 
 /* ------------------------------------------------- */
