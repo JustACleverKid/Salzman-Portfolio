@@ -12,11 +12,24 @@
 
 */
 
+/* Time left variables */
 
 var minsLeft = 0;
 var secsLeft = 15;
 var timeLeft = (minsLeft*60)+(secsLeft);
 
+/* Countdown Timer */
+
+function Countdown() {
+   minsLeft = Math.floor(timeLeft/60)
+   secsLeft = timeLeft - (60*minsLeft)
+   var minsString = addLeadingZero(minsLeft)
+   var secsString = addLeadingZero(secsLeft)
+   -
+   -
+   -
+   timeLeft = timeLeft - 1
+}
 
 /* ------------------------------------------------- */
 
