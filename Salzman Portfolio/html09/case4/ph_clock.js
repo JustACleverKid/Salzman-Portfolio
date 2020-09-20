@@ -12,6 +12,9 @@
 
 */
 
+Countdown();
+setInterval("Countdown()", 1000);
+
 /* Time left variables */
 
 var minsLeft = 0;
