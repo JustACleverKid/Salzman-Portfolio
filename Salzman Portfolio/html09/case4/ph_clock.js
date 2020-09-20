@@ -27,7 +27,7 @@ function Countdown() {
    var secsString = addLeadingZero(secsLeft)
    -
    -
-   -
+   checkTimer()
    timeLeft = timeLeft - 1
 }
 
