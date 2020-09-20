@@ -24,14 +24,14 @@ var timeLeft = (minsLeft*60)+(secsLeft);
 /* Countdown Timer */
 
 function Countdown() {
-   minsLeft = Math.floor(timeLeft/60)
-   secsLeft = timeLeft - (60*minsLeft)
-   var minsString = addLeadingZero(minsLeft)
-   var secsString = addLeadingZero(secsLeft)
-   document.getElementById("minutes").textContent(minsString)
-   document.getElementById("seconds").textContent(secsString)
-   checkTimer()
-   timeLeft = timeLeft - 1
+   minsLeft = Math.floor(timeLeft/60);
+   secsLeft = timeLeft - (60*minsLeft);
+   var minsString = addLeadingZero(minsLeft);
+   var secsString = addLeadingZero(secsLeft);
+   document.getElementById("minutes").textContent(minsString);
+   document.getElementById("seconds").textContent(secsString);
+   checkTimer();
+   timeLeft = timeLeft - 1;
 }
 
 /* ------------------------------------------------- */
