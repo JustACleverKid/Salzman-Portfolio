@@ -26,5 +26,5 @@ var imgStr = String("<img src='sd_sky" + mapNum + ".png'>");
 
 //set id's to variables
 
-document.getElementById("timestamp").innerHTML(timeStr);
+document.getElementById("timeStamp").innerHTML(timeStr);
 document.getElementById("planisphere").insertAdjacentHTML(imgStr);
