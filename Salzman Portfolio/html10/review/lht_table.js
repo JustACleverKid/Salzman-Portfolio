@@ -17,10 +17,13 @@ var tableHTML = (
 );
 var endDate = new Date(thisDay.getTime() + 14*24*60*60*1000);
 for (var i = 0; i < eventDates; i++) {
-   var eventDate = new Date(eventDates, i++);
+   var eventDate = new Date(eventDates)[i];
    var eventDay = eventDate.toDateString();
    var eventTime = eventDate.toLocaleTimeString();
    if (thisDay <= eventDate && eventDate <= endDate) {
-      tableHTML += "<tr><td>eventDay @ eventTime</td><td>eventDescriptions</td><td>eventPrices</td></tr>";
+      tableHTML += "<tr><td>eventDay @ eventTime</td><td>eventDescriptions"[i];"</td><td>eventPrices"[i];"</td></tr>";
    }
 }
+
+tableHTML += "</table>";
+document.getElementById("eventList").innerHTML = (tableHTML);
